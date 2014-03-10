@@ -1,4 +1,5 @@
 Pvp::Application.routes.draw do
+  devise_for :users
   resources :mailings
 
   namespace :painel do
