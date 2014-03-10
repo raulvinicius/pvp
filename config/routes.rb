@@ -1,4 +1,6 @@
 Pvp::Application.routes.draw do
+  resources :mailings
+
   get "teaser/index"
 
   root "teaser#index"
