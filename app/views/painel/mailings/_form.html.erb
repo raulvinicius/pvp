@@ -1,0 +1,29 @@
+<%= form_for(@painel_mailing) do |f| %>
+  <% if @painel_mailing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@painel_mailing.errors.count, "error") %> prohibited this painel_mailing from being saved:</h2>
+
+      <ul>
+      <% @painel_mailing.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :allow %><br>
+    <%= f.check_box :allow %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

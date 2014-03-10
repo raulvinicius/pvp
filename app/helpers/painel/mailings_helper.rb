@@ -1,0 +1,2 @@
+module Painel::MailingsHelper
+end

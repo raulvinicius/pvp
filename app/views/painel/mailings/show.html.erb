@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @painel_mailing.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @painel_mailing.email %>
+</p>
+
+<p>
+  <strong>Allow:</strong>
+  <%= @painel_mailing.allow %>
+</p>
+
+<%= link_to 'Edit', edit_painel_mailing_path(@painel_mailing) %> |
+<%= link_to 'Back', painel_mailings_path %>

@@ -1,0 +1,31 @@
+<h1>Listing painel_mailings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Allow</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @painel_mailings.each do |painel_mailing| %>
+      <tr>
+        <td><%= painel_mailing.name %></td>
+        <td><%= painel_mailing.email %></td>
+        <td><%= painel_mailing.allow %></td>
+        <td><%= link_to 'Show', painel_mailing %></td>
+        <td><%= link_to 'Edit', edit_painel_mailing_path(painel_mailing) %></td>
+        <td><%= link_to 'Destroy', painel_mailing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mailing', new_painel_mailing_path %>
