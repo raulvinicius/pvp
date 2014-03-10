@@ -1,5 +1,6 @@
 class Painel::MailingsController < ApplicationController
   before_action :set_painel_mailing, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /painel/mailings
   # GET /painel/mailings.json
