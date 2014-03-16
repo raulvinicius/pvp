@@ -10,12 +10,12 @@ $(document).ready(function(){
 		} )
 	}
 
-	if( $('.alerta').text() != '' )
+	if( $('.alerta-pvp').text() != '' )
 	{
-		$('.alerta').removeClass('hidden');
-		$('.alerta').bind('click', function() {
+		$('.alerta-pvp').removeClass('hidden');
+		$('.alerta-pvp').bind('click', function() {
 
-			$('.alerta').addClass('hidden');
+			$('.alerta-pvp').addClass('hidden');
 
 		} )
 	}
