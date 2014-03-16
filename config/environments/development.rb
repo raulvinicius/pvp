@@ -28,4 +28,8 @@ Pvp::Application.configure do
   config.assets.debug = true
 
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  
+  config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+
+  config.assets.precompile += %w( .svg .eot .woff .ttf )
 end
