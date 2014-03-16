@@ -14,7 +14,7 @@ class MailingsController < ApplicationController
 
     respond_to do |format|
       if @mailing.save
-        format.html { redirect_to root_path, notice: 'Você será avisado assim que as engrenagens começarem e rodar' }
+        format.html { redirect_to root_path, notice: '"Você receberá nosso sinal assim que as engrenagens começarem e rodar"' }
         format.json { render action: 'show', status: :created, location: @mailing }
       else
         format.html { render action: 'new' }
