@@ -11,13 +11,15 @@
     </div>
   <% end %>
 
+  <h3>Avise-me</h3>
+
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, :required => 'required' %>
   </div>
   <div class="field">
     <%= f.label :email %><br>
-    <%= f.text_field :email %>
+    <%= f.email_field :email, :required => 'required' %>
   </div>
   <div class="field">
     <%= f.hidden_field( :allow, :value => '1' ) %>

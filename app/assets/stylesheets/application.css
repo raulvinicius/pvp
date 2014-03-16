@@ -11,3 +11,92 @@
  *= require_self
  *= require_tree .
  */
+
+   @font-face {
+       font-family: 'ralewaybold';
+       src: url('/assets/raleway-bold-webfont.eot');
+       src: url('/assets/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+            url('/assets/raleway-bold-webfont.woff') format('woff'),
+            url('/assets/raleway-bold-webfont.ttf') format('truetype'),
+            url('/assets/raleway-bold-webfont.svg#ralewaybold') format('svg');
+       font-weight: normal;
+       font-style: normal;
+
+   }
+
+
+
+
+   @font-face {
+       font-family: 'ralewayextrabold';
+       src: url('/assets/raleway-extrabold-webfont.eot');
+       src: url('/assets/raleway-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+            url('/assets/raleway-extrabold-webfont.woff') format('woff'),
+            url('/assets/raleway-extrabold-webfont.ttf') format('truetype'),
+            url('/assets/raleway-extrabold-webfont.svg#ralewayextrabold') format('svg');
+       font-weight: normal;
+       font-style: normal;
+
+   }
+
+
+
+
+   @font-face {
+       font-family: 'ralewayregular';
+       src: url('/assets/raleway-regular-webfont.eot');
+       src: url('/assets/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+            url('/assets/raleway-regular-webfont.woff') format('woff'),
+            url('/assets/raleway-regular-webfont.ttf') format('truetype'),
+            url('/assets/raleway-regular-webfont.svg#ralewayregular') format('svg');
+       font-weight: normal;
+       font-style: normal;
+
+   }
+
+
+
+
+   @font-face {
+       font-family: 'ralewaythin';
+       src: url('/assets/raleway-thin-webfont.eot');
+       src: url('/assets/raleway-thin-webfont.eot?#iefix') format('embedded-opentype'),
+            url('/assets/raleway-thin-webfont.woff') format('woff'),
+            url('/assets/raleway-thin-webfont.ttf') format('truetype'),
+            url('/assets/raleway-thin-webfont.svg#ralewayregular') format('svg');
+       font-weight: normal;
+       font-style: normal;
+
+   }
+
+
+
+
+   @font-face {
+    font-family: 'realisedregular';
+    src: url('/assets/realised-webfont.eot');
+    src: url('/assets/realised-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/realised-webfont.woff') format('woff'),
+         url('/assets/realised-webfont.ttf') format('truetype'),
+         url('/assets/realised-webfont.svg#realisedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+form label,
+form h1,
+form h2,
+form h3,
+form h4,
+form h5,
+form h6
+{
+	font-family: 'ralewayregular';
+	font-style: italic;
+}
