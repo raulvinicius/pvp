@@ -1,2 +1,40 @@
-<%= render :partial => 'mailings/form', :locals => { :mailing => @mailing } %>
+        <header>
+          <div id="logo-teaser">
+            <h1>Loja PvP</h1>
+            <h3>Abril será oficialmente o mês do PvP. Aguarde!</h3>
+          </div>
+        </header>
+
+        <section id="teaser-pvp">
+          <div id="me-avise">
+            <figure><%= image_tag("lojapvp-wow.jpg") %></figure>
+
+ 			<%= render :partial => 'mailings/form', :locals => { :mailing => @mailing } %>
+
+          </div>
+
+          <div id="bg-tinta"></div>
+
+          <div id="tile-pedra"></div>
+        </section>
+
+        <footer>
+          <ul id="logos-games">
+            <li id="first-logo-game">
+            	<%= image_tag('lojapvp-logo-xboxone.jpg') %></li><li>
+            	<%= image_tag('lojapvp-logo-nitendo3ds.jpg') %></li><li>
+            	<%= image_tag('lojapvp-logo-ps3.jpg') %></li><li>
+            	<%= image_tag('lojapvp-logo-pokemon.jpg') %></li><li>
+            	<%= image_tag('lojapvp-logo-dungeonsanddragons.jpg') %></li><li>
+            	<%= image_tag('lojapvp-logo-magic.jpg') %></li><li id="last-logo-game">
+            	<%= image_tag('lojapvp-logo-wizards.jpg') %></li>
+          </ul>
+
+
+          <ul id="redes-sociais">
+            <li><a href="#"><p><%= image_tag('lojapvp-icon-facebook.jpg') %> /lojapvp</p></a></li>
+          </ul>
+        </footer>
+
+
 

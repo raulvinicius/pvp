@@ -12,6 +12,10 @@ Pvp::Application.routes.draw do
 
   root "teaser#index"
 
+  get 'frontend/:template' => 'frontend#show'
+
+  get 'frontend(/index)' => 'frontend#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

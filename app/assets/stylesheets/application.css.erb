@@ -89,14 +89,207 @@
 
 
 
-form label,
-form h1,
-form h2,
-form h3,
-form h4,
-form h5,
-form h6
+/*--------------------HEADER--------------------*/
+
+header
 {
-	font-family: 'ralewayregular';
-	font-style: italic;
+  position: relative;
 }
+
+header #logo-teaser
+{
+  width: 236px;
+  height: 247px;
+  position: absolute;
+  top: 90px;
+  left: 790px;
+  z-index: 10;
+  text-indent: -99999px;
+  background: url(<%= asset_path 'lojapvp-texto-teaser.png' %>);
+}
+
+/*-------------------- FIM HEADER--------------------*/
+
+
+
+/*--------------------ME AVISE--------------------*/
+
+#teaser-pvp #me-avise
+{
+  width: 870px;
+  height: 454px;
+  position: relative;
+  display: inline-block;
+}
+
+#teaser-pvp #me-avise form
+{
+  width: 629px;
+  height: 38px;
+  display: block;
+  position: absolute;
+  left: 20px;
+  bottom: 36px;
+  background: url(<%= asset_path 'lojapvp-bg-form.png' %>);
+}
+
+#teaser-pvp #me-avise form h3
+{
+  font-size: 18px;
+  color: white;
+  font-style: italic;
+  line-height: 38px;
+  display: inline-block;
+  margin-top: 0;
+  padding-left: 40px;
+}
+
+#teaser-pvp #me-avise form #label-nome,
+#teaser-pvp #me-avise form #label-email,
+#teaser-pvp #me-avise form input[type="submit"]
+{
+  width: 19px;
+  height: 19px;
+  text-indent: -99999px;
+  vertical-align: middle;
+  padding: 19px 0px;
+}
+
+#teaser-pvp #me-avise form #label-nome
+{
+  background: url(<%= asset_path 'lojapvp-icon-nome.png' %>) no-repeat center;
+  margin-left: 15px;
+}
+
+#teaser-pvp #me-avise form #label-email
+{
+  background: url(<%= asset_path 'lojapvp-icon-email.png' %>) no-repeat center;
+  margin-left: 22px;
+}
+
+#teaser-pvp #me-avise form input
+{
+  color: #da8427;
+  width: 157px;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#teaser-pvp #me-avise form input[type="submit"]
+{
+  width: 19px;
+  background: url(<%= asset_path 'lojapvp-icon-ok.png' %>) no-repeat center;
+  margin-left: 13px;
+  padding: 19px 17px;
+  vertical-align: top;
+}
+
+/*--------------------FIM ME AVISE--------------------*/
+
+
+/*--------------------BG TINTA--------------------*/
+
+#teaser-pvp #bg-tinta
+{
+  width: 100%;
+  height: 454px;
+  display: inline-block;
+  float: left;
+  background: url(<%= asset_path 'lojapvp-bg-tinta.png' %>) no-repeat 592px 0;
+  position: absolute;
+  margin-left: -870px;
+  z-index: 8;
+  pointer-events: none;
+}
+
+/*--------------------FIM BG TINTA--------------------*/
+
+
+
+/*--------------------TILE PEDRA--------------------*/
+
+#teaser-pvp #tile-pedra
+{
+  width: 100%;
+  height: 118px;
+  margin-top: -33px;
+  background: url(<%= asset_path 'lojapvp-tile-pedra.png' %>);
+  position: absolute;
+  z-index: 9;
+}
+
+/*--------------------FIM TILE PEDRA--------------------*/
+
+
+
+/*--------------------FOOTER--------------------*/
+
+/*-------------GAMES-------------*/
+footer
+{
+  color: #666666;
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+}
+
+footer ul
+{
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+footer ul li
+{
+  list-style: none;
+  display: inline-block;
+  padding: 0px 11px;
+  margin: 0;
+}
+
+footer #logos-games li
+{
+  padding-bottom: 15px;
+  border-bottom: 1px solid #cacaca;
+  vertical-align: middle;
+}
+
+footer #logos-games #first-logo-game
+{
+  padding-left: 30px;
+}
+
+footer #logos-games #last-logo-game
+{
+  padding-right: 30px;
+}
+
+/*-------------FIM GAMES-------------*/
+
+
+
+
+/*-------------REDES SOCIAIS-------------*/
+footer #redes-sociais
+{
+  margin-top: 20px;
+}
+
+footer #redes-sociais a
+{
+  text-decoration: none;
+  color: #666666;
+  font-weight: bold;
+}
+
+
+
+/*-------------FIM REDES SOCIAIS-------------*/
+
+
+
+/*--------------------FIM FOOTER--------------------*/

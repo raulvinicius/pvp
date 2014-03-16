@@ -13,18 +13,25 @@
 
   <h3>Avise-me</h3>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name, :required => 'required' %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.email_field :email, :required => 'required' %>
-  </div>
-  <div class="field">
-    <%= f.hidden_field( :allow, :value => '1' ) %>
-  </div>
-  <div class="actions">
-    <%= f.submit 'Avise-me' %>
-  </div>
+  <%= f.label :name, :class => "control-label", :id => 'label-nome', :title => "Nome" %>
+  <%= f.text_field :name, :required => 'required', :id => 'input-name', :class => 'input-small', :placeholder => 'Nome' %>
+  <%= f.label :email, :class => 'control-label', :id => 'label-email', :title => 'E-mail' %>
+  <%= f.email_field :email, :required => 'required', :id => 'input-email', :class => 'input-small', :placeholder => 'E-mail' %>
+  <%= f.hidden_field( :allow, :value => '1' ) %>
+  <%= f.submit 'OK', :class => 'bubmit-seta' %>
+
 <% end %>
+
+
+<!--             <form>
+              <h3>Me avise:</h3>
+              <label id="label-nome" class="control-label" for="input-nome" title="Nome">Nome</label>
+              <input type="text" id="input-nome" class="input-small" placeholder="Nome">
+
+              <label id="label-email" class="control-label" for="input-email" title="E-mail">E-mail</label>
+              <input type="email" id="input-email" class="input-small" placeholder="E-mail">
+
+              <input class="submit-seta" type="submit" value="ok">
+
+            </form>
+ -->
