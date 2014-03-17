@@ -9,6 +9,8 @@
   <div><%= f.label :nick %><br />
   <%= f.text_field :nick %></div>
 
+  <%= f.hidden_field( :status, :value => '1' ) %>
+
   <div><%= f.label :email %><br />
   <%= f.email_field :email %></div>
 
