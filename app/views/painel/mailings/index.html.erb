@@ -1,31 +1,57 @@
-<h1>Listing painel_mailings</h1>
+<div class="container">
+  <h1>Mailings</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Email</th>
-      <th>Allow</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @painel_mailings.each do |painel_mailing| %>
+  <table class="table table-striped table-hover">
+    <thead>
       <tr>
-        <td><%= painel_mailing.name %></td>
-        <td><%= painel_mailing.email %></td>
-        <td><%= painel_mailing.allow %></td>
-        <td><%= link_to 'Show', painel_mailing %></td>
-        <td><%= link_to 'Edit', edit_painel_mailing_path(painel_mailing) %></td>
-        <td><%= link_to 'Destroy', painel_mailing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Nome</th>
+        <th>E-mail</th>
+        <th>Mail Mkt</th>
+        <th></th>
+        <th></th>
+        <th></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @painel_mailings.each do |painel_mailing| %>
+        <tr>
+          <td><%= painel_mailing.name %></td>
+          <td><%= painel_mailing.email %></td>
+          <td>
+            <%  if painel_mailing.allow? %>
+            <%= 'sim' %>
+            <% else %>
+            <%= 'não' %>
+            <% end %>
+          </td>
+          <td>
+            <%= link_to painel_mailing, :class => 'btn btn-default', :title => 'Ver' do %>
+              <span class="glyphicon glyphicon-eye-open"></span>
+            <% end %>
+          </td>
+          <td>
+            <%= link_to edit_painel_mailing_path(painel_mailing), :class => 'btn btn-default', :title => 'Editar' do %>
+              <span class="glyphicon glyphicon-pencil"></span>
+            <% end %>
+          </td>
+          <td>
+            <%= link_to painel_mailing, method: :delete, data: { confirm: 'Cara, tem certeza?', cancel: 'Não' }, :class => 'btn btn-default', :title => 'Excluir' do %>
+              <span class="glyphicon glyphicon-trash"></span>
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<%= link_to 'New Mailing', new_painel_mailing_path %>
+  <br>
+
+  <%= link_to painel_path, :class => 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-th"></span> Voltar para Painel
+  <% end %>
+
+  <%= link_to new_painel_mailing_path, :class => 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-plus"></span> Novo Mailing
+  <% end %>
+</div>
