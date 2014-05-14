@@ -27,7 +27,7 @@
   {
     background: url(<%= asset_path 'lojapvp-texto-teaser-mobile.png' %>);
     top: 50px;
-    left: 398px;
+    left: 338px;
   }
 
   html body #teaser-pvp #me-avise figure
@@ -42,12 +42,12 @@
     display: none;
   }
 
-  html body footer #logos-games li
+  html body #footer-teaser #logos-games li
   {
     border-bottom: none;
   }
 
-  html body footer #redes-sociais
+  html body #footer-teaser #redes-sociais
   {
     border-top: 1px solid #cacaca;
   }
@@ -60,7 +60,7 @@
   html body header #logo-teaser
   {
     left: 50%;
-    margin-left: -118px;
+    margin-left: -152px;
   }
 
  }
@@ -159,12 +159,12 @@
     display: none;
   }
 
-  html body footer
+  html body #footer-teaser
   {
     margin-top: 363px !important;
   }
 
-  html body footer #logos-games li img
+  html body #footer-teaser #logos-games li img
   {
     width: 80%;
   }
@@ -207,7 +207,7 @@
 
  @media only screen and (max-height: 700px) and (min-width: 1060px) {
 
-  html body footer
+  html body #footer-teaser
   {
     position: static;
     margin-top: 113px;
@@ -219,7 +219,7 @@
 
  @media only screen and (max-height: 900px) and (min-width: 664px) and (max-width: 1059px) {
 
-  html body footer
+  html body #footer-teaser
   {
     position: static;
     margin-top: 113px;
@@ -231,7 +231,7 @@
 
  @media only screen and (max-height: 1100px) and (max-width: 663px) {
 
-  html body footer
+  html body #footer-teaser
   {
     position: static;
     margin-top: 113px;
@@ -330,11 +330,11 @@ header
 
 header #logo-teaser
 {
-  width: 236px;
-  height: 247px;
+  width: 304px;
+  height: 220px;
   position: absolute;
   top: 90px;
-  left: 790px;
+  left: 750px;
   z-index: 10;
   text-indent: -99999px;
   background: url(<%= asset_path 'lojapvp-texto-teaser.png' %>);
@@ -488,7 +488,7 @@ html body #teaser-pvp #me-avise form input[type="submit"]:focus
 /*--------------------FOOTER--------------------*/
 
 /*-------------GAMES-------------*/
-footer
+#footer-teaser
 {
   color: #666666;
   display: block;
@@ -497,7 +497,7 @@ footer
   width: 100%;
 }
 
-footer ul
+#footer-teaser ul
 {
   display: block;
   margin: 0;
@@ -505,7 +505,7 @@ footer ul
   text-align: center;
 }
 
-footer ul li
+#footer-teaser ul li
 {
   list-style: none;
   display: inline-block;
@@ -513,19 +513,19 @@ footer ul li
   margin: 0;
 }
 
-footer #logos-games li
+#footer-teaser #logos-games li
 {
   padding-bottom: 15px;
   border-bottom: 1px solid #cacaca;
   vertical-align: middle;
 }
 
-footer #logos-games #first-logo-game
+#footer-teaser #logos-games #first-logo-game
 {
   padding-left: 30px;
 }
 
-footer #logos-games #last-logo-game
+#footer-teaser #logos-games #last-logo-game
 {
   padding-right: 30px;
 }
@@ -536,12 +536,12 @@ footer #logos-games #last-logo-game
 
 
 /*-------------REDES SOCIAIS-------------*/
-footer #redes-sociais
+#footer-teaser #redes-sociais
 {
   padding-top: 20px;
 }
 
-footer #redes-sociais a
+#footer-teaser #redes-sociais a
 {
   text-decoration: none;
   color: #666666;
