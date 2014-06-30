@@ -1,42 +1,36 @@
-        <header>
-          <div id="logo-teaser" class="animado-02-in-out">
-            <h1>Loja PvP</h1>
-            <h3>Inauguração dia 17 de maio às 14h</h3>
+<div id="bg-logo" class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-md-6 col-sm-6">
+        <h1 class="col-md-6 col-sm-6 logo">Loja PvP</h1>
+        <h2 class="col-md-6 col-sm-6">Novo site <span>em breve</span></h2>
+      </div>
+
+      <div id="wrap-menu" class="col-md-6 col-sm-6 omega">
+        <% if current_user %>
+          <div id="menu-teaser" class="logged">
+            <p>Boas vindas <span><%= current_user.nick %></span>,<br>ficamos honrados com seu registro. <br>Em breve, você poderar ver seu ELO pelo nosso site.</p>
           </div>
-        </header>
+        <% else %>
+          <nav id="menu-teaser">
+            <ul>
+              <li>
+                <%= link_to(new_user_registration_path, class: "login animado-02-in-out") do %>
+                  <i id="icon"></i>Registre-se
+                <% end %>
+              </li>
+              <li>
+                <%= link_to(new_user_session_path, class: "registre animado-02-in-out") do %>
+                  <i id="icon"></i>Login
+                <% end %>
+              </li>
+            </ul>
+          </nav>
+        <% end %>
 
-        <section id="teaser-pvp">
-          <div id="me-avise">
-            <figure>
-              <%= image_tag("lojapvp-wow.jpg") %>
-              </figure>
+      </div>
 
- 			<%= render :partial => 'mailings/form', :locals => { :mailing => @mailing } %>
+    </div>
 
-          </div>
-
-          <div id="bg-tinta"></div>
-
-          <div id="tile-pedra"></div>
-        </section>
-
-        <footer id="footer-teaser">
-          <ul id="logos-games">
-            <li id="first-logo-game">
-            	<%= image_tag('lojapvp-logo-xboxone.jpg') %></li><li>
-            	<%= image_tag('lojapvp-logo-nitendo3ds.jpg') %></li><li>
-            	<%= image_tag('lojapvp-logo-ps3.jpg') %></li><li>
-            	<%= image_tag('lojapvp-logo-pokemon.jpg') %></li><li>
-            	<%= image_tag('lojapvp-logo-dungeonsanddragons.jpg') %></li><li>
-            	<%= image_tag('lojapvp-logo-magic.jpg') %></li><li id="last-logo-game">
-            	<%= image_tag('lojapvp-logo-wizards.jpg') %></li>
-          </ul>
-
-
-          <ul id="redes-sociais">
-            <li><a href="http://facebook.com/lojapvp"><p><%= image_tag('lojapvp-icon-facebook.jpg') %> /lojapvp</p></a></li>
-          </ul>
-        </footer>
-
-
-
+</div>
